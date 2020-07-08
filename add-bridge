@@ -1,0 +1,8 @@
+#!/bin/bash
+sudo ifconfig enp2s0 down
+sudo brctl addbr br0
+sudo brctl addif br0 enp2s0
+sudo ip link set dev br0 up
+sudo ifconfig br0 up
+sudo ifconfig enp2s0 up
+sudo dhclient br0

@@ -1,0 +1,14 @@
+<clusters>
+  <cluster>
+    <name>Study</name>
+    <interface>br0</interface>
+    <image>Ubuntu18.04</image>
+    <master>
+      <count>1</count>
+      </master>
+    </master>
+    <slave>
+      <count>2</count>
+    </slave>
+  </cluster>
+</clusters>
